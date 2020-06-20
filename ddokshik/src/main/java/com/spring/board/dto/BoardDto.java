@@ -1,6 +1,5 @@
 package com.spring.board.dto;
 
-import java.util.Date;
 
 public class BoardDto {
 

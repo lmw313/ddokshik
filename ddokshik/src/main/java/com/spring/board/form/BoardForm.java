@@ -1,7 +1,5 @@
 package com.spring.board.form;
 
-import java.util.Date;
-
 public class BoardForm {
 
 	int food_category;

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
 
@@ -7,29 +7,29 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>∂»∂»«— Ω∫∏∂∆Æ ∑πΩ√«« DDOKSHIK</title>
+    <title>ÎòëÎòëÌïú Ïä§ÎßàÌä∏ Î†àÏãúÌîº DDOKSHIK</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/owl.carousel.min.css.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/themify-icons.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/flaticon.css">
+    <link rel="stylesheet" href="css/flaticon.css">
     <!-- fontawesome CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <!-- magnific CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/magnific-popup.css">
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/gijgo.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/gijgo.min.css">
     <!-- niceselect CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/nice-select.css">
+    <link rel="stylesheet" href="css/nice-select.css">
     <!-- slick CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/slick.css">
+    <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                  <div class="row align-items-center ">
                      <div class="col-lg-12">
                          <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                             <a class="navbar-brand" href="index.jsp"> <img src="/resources/img/logo.png" alt="logo"> </a>
+                             <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
                              <button class="navbar-toggler" type="button" data-toggle="collapse"
                                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                  aria-expanded="false" aria-label="Toggle navigation">
@@ -63,22 +63,22 @@
                                  <ul class="navbar-nav">
 
                                      <li class="nav-item">
-                                         <a class="nav-link" href="about.html">≥™¿« ¿Á∑·</a>
+                                         <a class="nav-link" href="about.html">ÎÇòÏùò Ïû¨Î£å</a>
                                      </li>
                                      <li class="nav-item dropdown">
                                          <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
                                              role="button" data-toggle="dropdown" aria-haspopup="true"
                                              aria-expanded="false">
-                                             ∑πΩ√««
+                                             Î†àÏãúÌîº
                                          </a>
                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                             <a class="dropdown-item" href="my_receipe.html">≥™¿« ∑πΩ√««</a>
-                                             <a class="dropdown-item" href="recommend_receipe.html">√ﬂ√µ ∑πΩ√««</a>
-                                             <a class="dropdown-item" href="search_receipe.html">∑πΩ√«« ∞Àªˆ</a>
+                                             <a class="dropdown-item" href="my_receipe.html">ÎÇòÏùò Î†àÏãúÌîº</a>
+                                             <a class="dropdown-item" href="recommend_receipe.html">Ï∂îÏ≤ú Î†àÏãúÌîº</a>
+                                             <a class="dropdown-item" href="search_receipe.html">Î†àÏãúÌîº Í≤ÄÏÉâ</a>
                                          </div>
                                      </li>
                                      <li class="nav-item">
-                                         <a class="nav-link" href="shopping.html">ø¬∂Û¿Œ ºÓ«Œ</a>
+                                         <a class="nav-link" href="shopping.html">Ïò®ÎùºÏù∏ ÏáºÌïë</a>
                                      </li>
                                  </ul>
                              </div>
@@ -99,8 +99,8 @@
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
                             <h2>Online Shopping</h2>
-                            <p>« ø‰«— ¿Á∑·µÈ¿ª</p>
-                            <p>±∏¿‘«“ ºˆ ¿÷æÓø‰!</p>
+                            <p>ÌïÑÏöîÌïú Ïû¨Î£åÎì§ÏùÑ</p>
+                            <p>Íµ¨ÏûÖÌï† Ïàò ÏûàÏñ¥Ïöî!</p>
                         </div>
                     </div>
                 </div>
@@ -126,16 +126,16 @@
                         <img src="img/emart_traders.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">¿˙∑≈,¥ŸæÁ«—</a>
+                                <a href="#" class="place_btn">Ï†ÄÎ†¥,Îã§ÏñëÌïú</a>
                                 <h3>Emart Traders</h3>
-                                <p>¿Ã∏∂∆Æ ∆Æ∑π¿Ã¥ıΩ∫</p>
+                                <p>Ïù¥ÎßàÌä∏ Ìä∏Î†àÏù¥ÎçîÏä§</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">
@@ -149,16 +149,16 @@
                         <img src="img/homeplus.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">¥ŸæÁ«—</a>
+                                <a href="#" class="place_btn">Îã§ÏñëÌïú</a>
                                 <h3>Homeplus</h3>
-                                <p>»®«√∑ØΩ∫</p>
+                                <p>ÌôàÌîåÎü¨Ïä§</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">
@@ -172,16 +172,16 @@
                         <img src="img/market_kurly.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">¥ŸæÁ«—</a>
+                                <a href="#" class="place_btn">Îã§ÏñëÌïú</a>
                                 <h3>Market Kurly</h3>
-                                <p>∏∂ƒœ ƒ√∏Æ</p>
+                                <p>ÎßàÏºì Ïª¨Î¶¨</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">
@@ -195,16 +195,16 @@
                         <img src="img/coupang.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">∫¸∏•</a>
+                                <a href="#" class="place_btn">Îπ†Î•∏</a>
                                 <h3>Coupang</h3>
-                                <p>ƒÌ∆Œ</p>
+                                <p>Ïø†Ìå°</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">

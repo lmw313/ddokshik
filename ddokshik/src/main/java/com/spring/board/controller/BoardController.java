@@ -35,4 +35,7 @@ public class BoardController {
 
 		return boardList;
 	}
+	
+	
+	
 }

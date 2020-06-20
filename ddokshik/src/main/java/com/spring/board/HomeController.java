@@ -50,4 +50,12 @@ public class HomeController {
 		return "home";
 	}
 
+	/**
+	 * Simply selects the home view to render by returning its name.
+	 */
+	@RequestMapping(value = "/shopping", method = RequestMethod.GET)
+	public String shopping(Locale locale, Model model) {
+
+		return "shopping";
+	}
 }
