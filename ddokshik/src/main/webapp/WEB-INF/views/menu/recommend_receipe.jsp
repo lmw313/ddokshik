@@ -51,7 +51,7 @@
                 <div class="row align-items-center ">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                            <a class="navbar-brand" href="index.jsp"> <img src="/resources/img/logo.png" alt="logo"> </a>
+                            <a class="navbar-brand" href="index"> <img src="/resources/img/logo.png" alt="logo"> </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSuortedContent" aria-controls="navbarSuortedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -63,22 +63,22 @@
                                 <ul class="navbar-nav">
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about.jsp">나의 재료</a>
+                                        <a class="nav-link" href="about">나의 재료</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="blog.jsp" id="navbarDropdown_1"
+                                        <a class="nav-link dropdown-toggle" href="blog" id="navbarDropdown_1"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             레시피
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                            <a class="dropdown-item" href="my_receipe.jsp">나의 레시피</a>
-                                            <a class="dropdown-item" href="recommend_receipe.jsp">추천 레시피</a>
-                                            <a class="dropdown-item" href="search_receipe.jsp">레시피 검색</a>
+                                            <a class="dropdown-item" href="my_receipe">나의 레시피</a>
+                                            <a class="dropdown-item" href="recommend_receipe">추천 레시피</a>
+                                            <a class="dropdown-item" href="search_receipe">레시피 검색</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="shopping.jsp">온라인 쇼핑</a>
+                                        <a class="nav-link" href="shopping">온라인 쇼핑</a>
                                     </li>
                                 </ul>
                             </div>
