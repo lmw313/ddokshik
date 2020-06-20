@@ -10,7 +10,7 @@
     <title>회원가입</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="./resources/css/font-awesome.min.members.css" media="screen" title="no title" charset="utf-8">
     <!-- Custom style -->
