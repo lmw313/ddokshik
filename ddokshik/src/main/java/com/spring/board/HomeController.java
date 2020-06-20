@@ -12,7 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import kr.co.ddokshik.CommonUtil;
+import kr.co.ddokshik.common.CommonUtil;
 
 /**
  * Handles requests for the application home page.

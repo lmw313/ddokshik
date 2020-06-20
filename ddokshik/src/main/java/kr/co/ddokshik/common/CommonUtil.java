@@ -1,4 +1,4 @@
-package kr.co.ddokshik;
+package kr.co.ddokshik.common;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
