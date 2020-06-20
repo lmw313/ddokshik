@@ -24,11 +24,23 @@
     <![endif]-->
   </head>
   <body>
-
+<div class="main_menu_iner">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                            <a class="navbar-brand" href="index.jsp"> <img src="./resources/img/logo.png" alt="logo"> </a>
+                            
+                            </nav>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                      
 
       <article class="container">
         <div class="page-header">
-          <h1>똑식 회원가입 <small>DDOKSHIK Sign up</small></h1>
+          <h1> <small>회원가입</small></h1>
         </div>
         <div class="col-md-6 col-md-offset-3">
             <div class="form-group">
