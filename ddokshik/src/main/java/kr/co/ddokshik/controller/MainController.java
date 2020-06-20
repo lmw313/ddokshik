@@ -1,8 +1,6 @@
 package kr.co.ddokshik.controller;
 
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.spring.board.dto.BoardDto;
-import com.spring.board.form.BoardForm;
-
+import kr.co.ddokshik.common.DdokshikResult;
 import kr.co.ddokshik.service.MainService;
 
 @Controller
@@ -40,10 +36,13 @@ public class MainController {
 
 	@RequestMapping(value = "/signup", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
 	@ResponseBody
-	public void signup(HttpServletRequest request, HttpServletResponse response,
+	public DdokshikResult signup(HttpServletRequest request, HttpServletResponse response,
 			@RequestParam HashMap<String, Object> param) throws Exception {
-		System.out.println("민우 : " + param);
+		DdokshikResult ddokshikResult = new DdokshikResult();
 		mainService.signup(param);
+
+		ddokshikResult.setResultMsg("success");
+		return ddokshikResult;
 	}
 
 }

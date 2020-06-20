@@ -7,22 +7,18 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 function signup(){
-	var obj = new Object();
+	var param = new Object();
 
-    obj.id = 'lmw';
-    obj.password = 'pwpw';
-    var jsonData = JSON.stringify(obj);
+	param.id = 'lmw';
+	param.password = 'pwpw';
+	param.name = '이민우';
+    var jsonData = JSON.stringify(param);
 
 	$.ajax({			
 		type:"POST",
 	    url:"/board/signup",
         dataType:"JSON",
-        Content-Type:"application/json",
-        data : {
-            id : 'lmw',
-            password : '1234',
-            name : '이민우'
-     	},
+        data : param,
         success : function(obj) {
 			alert("성공");				
         },	  
