@@ -35,7 +35,7 @@
 
 			$.ajax({			
 				type:"POST",
-	   		 	url:"/board/signup",
+	   		 	url:"/signup",
         		dataType:"JSON",
         		data : param,
         		success : function(obj) {
