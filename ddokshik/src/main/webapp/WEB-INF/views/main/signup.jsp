@@ -22,6 +22,31 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		function signup(){
+			var param = new Object();
+
+			param.id = document.getElementById('Id').value;
+			param.password = document.getElementById('Password').value;
+			param.name = document.getElementById('Name').value;
+    		//var jsonData = JSON.stringify(param);
+
+			$.ajax({			
+				type:"POST",
+	   		 	url:"/board/signup",
+        		dataType:"JSON",
+        		data : param,
+        		success : function(obj) {
+					alert("성공");				
+        		},	  
+       			 error : function(xhr, status, error) {
+       				 alert("실패");
+       			}
+     		});
+		}
+	</script>
   </head>
   <body>
 <div class="main_menu_iner">
@@ -65,7 +90,7 @@
 
 
             <div class="form-group text-center">
-              <button type="submit" class="btn btn-info">회원가입<i class="fa fa-check spaceLeft"></i></button>
+              <button type="submit" class="btn btn-info" onclick="signup();">회원가입<i class="fa fa-check spaceLeft"></i></button>
               <button type="submit" class="btn btn-warning">가입취소<i class="fa fa-times spaceLeft"></i></button>
             </div>
         </div>
