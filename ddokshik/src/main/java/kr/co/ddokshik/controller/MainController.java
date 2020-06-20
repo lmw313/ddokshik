@@ -28,6 +28,13 @@ public class MainController {
 
 		return "main/index";
 	}
+	
+	@RequestMapping(value = "/signup", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+	public String getsignup(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		
+		return "main/signup";
+		
+	}
 
 	@RequestMapping(value = "/signup", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
 	@ResponseBody
