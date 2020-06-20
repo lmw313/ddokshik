@@ -36,26 +36,17 @@ public class HomeController {
 
 		model.addAttribute("serverTime", formattedDate);
 
-		// SHA-256 변환 메소드 사용 예제 시작
+		// SHA-256 蹂��솚 硫붿냼�뱶 �궗�슜 �삁�젣 �떆�옉
 		String passwordToSHA256 = "password";
 		String passwordBySHA256 = CommonUtil.strToSHA256(passwordToSHA256);
-		// SHA-256 변환 실패한 경우 소스 시작
+		// SHA-256 蹂��솚 �떎�뙣�븳 寃쎌슦 �냼�뒪 �떆�옉
 		if (TextUtils.isEmpty(passwordBySHA256)) {
-			System.out.println("비밀번호 SHA256 해싱 값 : 변환 실패 로직이 있다면 추가해주세요");
+			System.out.println("鍮꾨�踰덊샇 SHA256 �빐�떛 媛� : 蹂��솚 �떎�뙣 濡쒖쭅�씠 �엳�떎硫� 異붽��빐二쇱꽭�슂");
 		}
-		// SHA-256 변환 실패한 경우 소스 끝
-		System.out.println("비밀번호 SHA256 해싱 값 : " + passwordBySHA256);
-		// SHA-256 변환 메소드 사용 예제 끝
+		// SHA-256 蹂��솚 �떎�뙣�븳 寃쎌슦 �냼�뒪 �걹
+		System.out.println("鍮꾨�踰덊샇 SHA256 �빐�떛 媛� : " + passwordBySHA256);
+		// SHA-256 蹂��솚 硫붿냼�뱶 �궗�슜 �삁�젣 �걹
 
 		return "home";
-	}
-
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	@RequestMapping(value = "/shopping", method = RequestMethod.GET)
-	public String shopping(Locale locale, Model model) {
-
-		return "shopping";
 	}
 }

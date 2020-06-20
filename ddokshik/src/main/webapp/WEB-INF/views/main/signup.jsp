@@ -12,9 +12,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome -->
-    <link rel="stylesheet" href="webapp/resources/css/font-awesome.min.members.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./resources/css/font-awesome.min.members.css" media="screen" title="no title" charset="utf-8">
     <!-- Custom style -->
-    <link rel="stylesheet" href="webapp/resources/css/style.members.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./resources/css/style.members.css" media="screen" title="no title" charset="utf-8">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -63,6 +63,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="webapp/resources/js/bootstrap.min.members.js"></script>
+    <script src="./resources/js/bootstrap.min.members.js"></script>
   </body>
 </html>
