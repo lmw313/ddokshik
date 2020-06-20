@@ -1,93 +1,92 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>∂»∂»«— Ω∫∏∂∆Æ ∑πΩ√«« DDOKSHIK</title>
-    <link rel="icon" href="img/favicon.png">
+    <title>ÎòëÎòëÌïú Ïä§ÎßàÌä∏ Î†àÏãúÌîº DDOKSHIK</title>
+     <link rel="icon" href="/resources/img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/animate.css">
+    <link rel="stylesheet" href="/resources/css/animate.css">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/owl.carousel.min.css.css">
+    <link rel="stylesheet" href="/resources/css/owl.carousel.min.css">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/themify-icons.css">
+    <link rel="stylesheet" href="/resources/css/themify-icons.css">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/flaticon.css">
+    <link rel="stylesheet" href="/resources/css/flaticon.css">
     <!-- fontawesome CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/resources/fontawesome/css/all.min.css">
     <!-- magnific CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/magnific-popup.css">
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/gijgo.min.css">
+    <link rel="stylesheet" href="/resources/css/magnific-popup.css">
+    <link rel="stylesheet" href="/resources/css/gijgo.min.css">
     <!-- niceselect CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/nice-select.css">
+    <link rel="stylesheet" href="/resources/css/nice-select.css">
     <!-- slick CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/slick.css">
+    <link rel="stylesheet" href="/resources/css/slick.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="/ddokshik/ddokshik/src/main/webapp/WEB-INF/views/css/style.css">
+    <link rel="stylesheet" href="/resources/css/style.css">
 </head>
 
 <body>
     <!--::header part start::-->
     <header class="main_menu">
-         <!--div class="sub_menu">
-             <div class="container">
-                 <div class="row">
-                     <div class="col-lg-6 col-sm-12 col-md-6">
+        <!--div class="sub_menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-md-6">
 
-                     </div>
-                     <div class="col-lg-6 col-sm-12 col-md-6">
-                     </div>
-                 </div>
-             </div>
-         </div-->
-         <div class="main_menu_iner">
-             <div class="container">
-                 <div class="row align-items-center ">
-                     <div class="col-lg-12">
-                         <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                             <a class="navbar-brand" href="index.jsp"> <img src="/resources/img/logo.png" alt="logo"> </a>
-                             <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                 aria-expanded="false" aria-label="Toggle navigation">
-                                 <span class="navbar-toggler-icon"></span>
-                             </button>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-6">
+                    </div>
+                </div>
+            </div>
+        </div-->
+        <div class="main_menu_iner">
+            <div class="container">
+                <div class="row align-items-center ">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                            <a class="navbar-brand" href="index.jsp"> <img src="/resources/img/logo.png" alt="logo"> </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSuortedContent" aria-controls="navbarSuortedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
 
-                             <div class="collapse navbar-collapse main-menu-item justify-content-center"
-                                 id="navbarSupportedContent">
-                                 <ul class="navbar-nav">
+                            <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                                id="navbarSuortedContent">
+                                <ul class="navbar-nav">
 
-                                     <li class="nav-item">
-                                         <a class="nav-link" href="about.html">≥™¿« ¿Á∑·</a>
-                                     </li>
-                                     <li class="nav-item dropdown">
-                                         <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
-                                             role="button" data-toggle="dropdown" aria-haspopup="true"
-                                             aria-expanded="false">
-                                             ∑πΩ√««
-                                         </a>
-                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                             <a class="dropdown-item" href="my_receipe.html">≥™¿« ∑πΩ√««</a>
-                                             <a class="dropdown-item" href="recommend_receipe.html">√ﬂ√µ ∑πΩ√««</a>
-                                             <a class="dropdown-item" href="search_receipe.html">∑πΩ√«« ∞Àªˆ</a>
-                                         </div>
-                                     </li>
-                                     <li class="nav-item">
-                                         <a class="nav-link" href="shopping.html">ø¬∂Û¿Œ ºÓ«Œ</a>
-                                     </li>
-                                 </ul>
-                             </div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.jsp">ÎÇòÏùò Ïû¨Î£å</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="blog.jsp" id="navbarDropdown_1"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Î†àÏãúÌîº
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
+                                            <a class="dropdown-item" href="my_receipe.jsp">ÎÇòÏùò Î†àÏãúÌîº</a>
+                                            <a class="dropdown-item" href="recommend_receipe.jsp">Ï∂îÏ≤ú Î†àÏãúÌîº</a>
+                                            <a class="dropdown-item" href="search_receipe.jsp">Î†àÏãúÌîº Í≤ÄÏÉâ</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="shopping.jsp">Ïò®ÎùºÏù∏ ÏáºÌïë</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                         </nav>
-                     </div>
-                 </div>
-             </div>
-         </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
      </header>
         <!-- Header part end-->
 
@@ -99,8 +98,8 @@
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
                             <h2>Online Shopping</h2>
-                            <p>« ø‰«— ¿Á∑·µÈ¿ª</p>
-                            <p>±∏¿‘«“ ºˆ ¿÷æÓø‰!</p>
+                            <p>ÌïÑÏöîÌïú Ïû¨Î£åÎì§ÏùÑ</p>
+                            <p>Íµ¨ÏûÖÌï† Ïàò ÏûàÏñ¥Ïöî!</p>
                         </div>
                     </div>
                 </div>
@@ -123,19 +122,19 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/emart_traders.png" alt="">
+                        <img src="/resources/img/emart_traders.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">¿˙∑≈,¥ŸæÁ«—</a>
+                                <a href="#" class="place_btn">Ï†ÄÎ†¥,Îã§ÏñëÌïú</a>
                                 <h3>Emart Traders</h3>
-                                <p>¿Ã∏∂∆Æ ∆Æ∑π¿Ã¥ıΩ∫</p>
+                                <p>Ïù¥ÎßàÌä∏ Ìä∏Î†àÏù¥ÎçîÏä§</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">
@@ -146,19 +145,19 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/homeplus.png" alt="">
+                        <img src="/resources/img/homeplus.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">¥ŸæÁ«—</a>
+                                <a href="#" class="place_btn">Îã§ÏñëÌïú</a>
                                 <h3>Homeplus</h3>
-                                <p>»®«√∑ØΩ∫</p>
+                                <p>ÌôàÌîåÎü¨Ïä§</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">
@@ -169,19 +168,19 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/market_kurly.png" alt="">
+                        <img src="/resources/img/market_kurly.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">¥ŸæÁ«—</a>
+                                <a href="#" class="place_btn">Îã§ÏñëÌïú</a>
                                 <h3>Market Kurly</h3>
-                                <p>∏∂ƒœ ƒ√∏Æ</p>
+                                <p>ÎßàÏºì Ïª¨Î¶¨</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">
@@ -192,19 +191,19 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="img/coupang.png" alt="">
+                        <img src="/resources/img/coupang.png" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
-                                <a href="#" class="place_btn">∫¸∏•</a>
+                                <a href="#" class="place_btn">Îπ†Î•∏</a>
                                 <h3>Coupang</h3>
-                                <p>ƒÌ∆Œ</p>
+                                <p>Ïø†Ìå°</p>
                                 <div class="place_review">
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
                                     <a href="#"><i class="fas fa-star"></i></a>
-                                    <span>(πËº€ ∏∏¡∑µµ)</span>
+                                    <span>(Î∞∞ÏÜ° ÎßåÏ°±ÎèÑ)</span>
                                 </div>
                             </div>
                             <div class="details_icon text-right">
@@ -221,28 +220,28 @@
 
 
     <!-- jquery plugins here-->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="js/popper.min.js"></script>
+    <script src="/resources/js/jquery-1.12.1.min.js"></script>
+    <!-- poer js -->
+    <script src="/resources/js/poer.min.js"></script>
     <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/resources/js/bootstrap.min.js"></script>
     <!-- magnific js -->
-    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="/resources/js/jquery.magnific-popup.js"></script>
     <!-- swiper js -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="/resources/js/owl.carousel.min.js"></script>
     <!-- masonry js -->
-    <script src="js/masonry.pkgd.js"></script>
+    <script src="/resources/js/masonry.pkgd.js"></script>
     <!-- masonry js -->
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/gijgo.min.js"></script>
+    <script src="/resources/js/jquery.nice-select.min.js"></script>
+    <script src="/resources/js/gijgo.min.js"></script>
     <!-- contact js -->
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="/resources/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/resources/js/jquery.form.js"></script>
+    <script src="/resources/js/jquery.validate.min.js"></script>
+    <script src="/resources/js/mail-script.js"></script>
+    <script src="/resources/js/contact.js"></script>
     <!-- custom js -->
-    <script src="js/custom.js"></script>
+    <script src="/resources/js/custom.js"></script>
 </body>
 
 </html>
