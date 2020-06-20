@@ -13,7 +13,7 @@ public class MainService {
 	@Autowired
 	private MainDao mainDao;
 
-	public void signup(HashMap param) throws Exception {
+	public void signup(HashMap<String, Object> param) throws Exception {
 
 		mainDao.signup(param);
 	}
