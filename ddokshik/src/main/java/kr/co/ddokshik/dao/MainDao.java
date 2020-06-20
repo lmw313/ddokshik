@@ -13,10 +13,15 @@ public class MainDao {
 	@Resource(name = "sqlSession")
 	private SqlSession sqlSession;
 
-	private static final String NAMESPACE = "com.spring.board.boardMapper";
+	private static final String NAMESPACE = "kr.co.ddokshik.mainMapper";
 
 	public void signup(HashMap param) throws Exception {
 
-		sqlSession.insert(NAMESPACE + ".getBoardList", param);
+		sqlSession.insert(NAMESPACE + ".singup", param);
+	}
+	
+	public void checklogin(HashMap param) throws Exception {
+
+		sqlSession.insert(NAMESPACE + ".checklogin", param);
 	}
 }
