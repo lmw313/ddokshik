@@ -15,15 +15,18 @@ function signup(){
 
 	$.ajax({			
 		type:"POST",
-	    url:"/board/minwoo",
+	    url:"/board/signup",
         dataType:"JSON",
+        Content-Type:"application/json",
         data : {
-            json : jsonData
+            id : 'lmw',
+            password : '1234',
+            name : '이민우'
      	},
         success : function(obj) {
 			alert("성공");				
         },	  
-        error : function(xhr, status, error) {}
+        error : function(xhr, status, error) {alert("실패");}
      });
 }
 </script>

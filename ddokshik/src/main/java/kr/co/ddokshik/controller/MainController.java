@@ -42,7 +42,7 @@ public class MainController {
 	@ResponseBody
 	public void signup(HttpServletRequest request, HttpServletResponse response,
 			@RequestParam HashMap<String, Object> param) throws Exception {
-
+		System.out.println("민우 : " + param);
 		mainService.signup(param);
 	}
 

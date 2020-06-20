@@ -17,7 +17,7 @@ public class MainDao {
 
 	public void signup(HashMap param) throws Exception {
 
-		sqlSession.insert(NAMESPACE + ".singup", param);
+		sqlSession.insert(NAMESPACE + ".getsinup", param);
 	}
 	
 	public void checklogin(HashMap param) throws Exception {
