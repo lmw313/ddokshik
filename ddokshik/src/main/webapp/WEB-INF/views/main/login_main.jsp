@@ -64,7 +64,7 @@
 				<form class="login100-form validate-form p-b-33 p-t-5">
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="id" placeholder="ID">
+						<input class="input100" type="submit" name="id" placeholder="ID">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
@@ -108,6 +108,7 @@
 	<script src="./resources/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="./resources/js/main.js"></script>
+
 
 </body>
 </html>
