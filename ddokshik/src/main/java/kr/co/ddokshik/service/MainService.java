@@ -17,4 +17,11 @@ public class MainService {
 
 		mainDao.signup(param);
 	}
+	
+	
+
+	public void checklogin(HashMap<String, Object> param) throws Exception {
+		// TODO Auto-generated method stub
+		mainDao.checklogin(param);
+	}
 }

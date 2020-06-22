@@ -40,6 +40,18 @@ public class MainController {
 		return "main/login_main";
 
 	}
+	
+	@RequestMapping(value = "/login_main", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
+	@ResponseBody
+	public DdokshikResult login_main(HttpServletRequest request, HttpServletResponse response,
+			@RequestParam HashMap<String, Object> param) throws Exception {
+		DdokshikResult ddokshikResult = new DdokshikResult();
+		mainService.checklogin(param);
+
+		ddokshikResult.setResultMsg("로그인 성공");
+		return ddokshikResult;
+	}
+	
 
 	@RequestMapping(value = "/signup", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
 	@ResponseBody
