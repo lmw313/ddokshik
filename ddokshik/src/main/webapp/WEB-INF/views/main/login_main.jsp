@@ -44,7 +44,14 @@
         		dataType:"JSON",
         		data : param,
         		success : function(obj) {
-					alert("성공");				
+        			
+        			if(obj.result=="success"){
+        				alert("성공");	
+        			}else if(obj.result!="success"){
+        				 alert("실패");
+        			}
+				
+        			location.href="index"
         		},	  
        			 error : function(xhr, status, error) {
        				 alert("실패");
@@ -64,7 +71,7 @@
 				<form class="login100-form validate-form p-b-33 p-t-5">
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="submit" name="id" placeholder="ID">
+						<input class="input100" type="text" name="id" placeholder="ID">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
