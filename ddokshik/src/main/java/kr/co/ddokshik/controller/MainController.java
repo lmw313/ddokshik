@@ -33,6 +33,13 @@ public class MainController {
 		return "main/signup";
 
 	}
+	
+	@RequestMapping(value = "/login_main", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+	public String login_main(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "main/login_main";
+
+	}
 
 	@RequestMapping(value = "/signup", method = RequestMethod.POST, produces = "application/json;charset=utf-8")
 	@ResponseBody

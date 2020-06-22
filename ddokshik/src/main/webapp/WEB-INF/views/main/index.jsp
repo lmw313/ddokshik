@@ -101,7 +101,7 @@
                             <h3> 똑똑한 스마트 레시피 </h3>
                             <h1> DDOKSHIK!</h1>
                             <p>당신이 가지고 있는 재료들로 멋진 요리를 해 보세요</p>
-                            <a href="about" class="btn_1">Check materials</a>
+                            <a href="login_main" class="btn_1">Login</a>
                         </div>
                     </div>
                 </div>
