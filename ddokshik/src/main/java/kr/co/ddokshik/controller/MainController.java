@@ -48,7 +48,7 @@ public class MainController {
 		DdokshikResult ddokshikResult = new DdokshikResult();
 		mainService.checklogin(param);
 
-		ddokshikResult.setResultMsg("·Î±×ÀÎ ¼º°ø");
+		ddokshikResult.setResultMsg("ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		return ddokshikResult;
 		
 		
