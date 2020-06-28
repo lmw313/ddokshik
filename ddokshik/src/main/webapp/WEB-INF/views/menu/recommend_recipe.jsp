@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="utf-8"%>
 <!doctype html>
 <html lang="en">
 
@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>똑똑한 스마트 레시피 DDOKSHIK</title>
-  <link rel="icon" href="./resources/img/favicon.png">
+    <link rel="icon" href="./resources/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -30,13 +30,11 @@
     <link rel="stylesheet" href="./resources/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="./resources/css/style.css">
-    <!-- 검색창 css  -->
-    <link rel="stylesheet" href="./resources/css/search-form.css">
 </head>
 
 <body>
     <!--::header part start::-->
-     <header class="main_menu">
+   <header class="main_menu">
         <!--div class="sub_menu">
             <div class="container">
                 <div class="row">
@@ -74,9 +72,9 @@
                                             레시피
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                            <a class="dropdown-item" href="my_receipe">나의 레시피</a>
-                                            <a class="dropdown-item" href="recommend_receipe">추천 레시피</a>
-                                            <a class="dropdown-item" href="search_receipe">레시피 검색</a>
+                                            <a class="dropdown-item" href="my_recipe">나의 레시피</a>
+                                            <a class="dropdown-item" href="recommend_recipe">추천 레시피</a>
+                                            <a class="dropdown-item" href="search_recipe">레시피 검색</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
@@ -90,7 +88,7 @@
                 </div>
             </div>
         </div>
-     </header>
+    </header>
         <!-- Header part end-->
 
     <!-- breadcrumb start-->
@@ -100,9 +98,9 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
-                            <h2>Search Receipe</h2>
-                            <p>만들고 싶은 레시피를</p>
-                            <p>검색해 보세요!</p>
+                            <h2>Recommend recipe</h2>
+                            <p>오늘의 추천 레시피를</p>
+                            <p>이곳에서 확인해 보세요!</p>
                         </div>
                     </div>
                 </div>
@@ -117,30 +115,27 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="section_tittle text-center">
+                        <h2>Today's Recipe</h2>
+
+<iframe src='https://tv.naver.com/embed/14102042?autoPlay=true' 
+frameborder='no' scrolling='no' marginwidth='auto' marginheight='auto' WIDTH='800' HEIGHT='600' allow='autoplay' 
+allowfullscreen></iframe>
 
 
-                        <div id='search-box-container'>
-                          <button id='search-box-submit'>
-                            <i class='fa fa-search'></i>
-                          </button>
-                          <input id='search-box-input'>
-                        </div>
-                        <h3 id='search-response'></h3>
 
+
+ 
                     </div>
                 </div>
-            </div>
-
-
-
-
+            </div>          
+            </div>        
     </section>
     <!-- hotel list css end -->
 
 
 
     <!-- jquery plugins here-->
-   <script src="./resources/js/jquery-1.12.1.min.js"></script>
+    <script src="./resources/js/jquery-1.12.1.min.js"></script>
     <!-- poer js -->
     <script src="./resources/js/poer.min.js"></script>
     <!-- bootstrap js -->
@@ -165,4 +160,3 @@
 </body>
 
 </html>
-

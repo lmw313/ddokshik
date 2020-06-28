@@ -1,14 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
 
 <head>
-    <!-- ∞«µÈ∏È æ» µ  ¡ˆøÏ∏È æ» µ  æ∆π´∆∞ æ» µ  -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>∂»∂»«— Ω∫∏∂∆Æ ∑πΩ√«« DDOKSHIK</title>
-    <link rel="icon" href="./resources/img/favicon.png">
+    <title>ÎòëÎòëÌïú Ïä§ÎßàÌä∏ Î†àÏãúÌîº DDOKSHIK</title>
+  <link rel="icon" href="./resources/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -30,11 +30,13 @@
     <link rel="stylesheet" href="./resources/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="./resources/css/style.css">
+    <!-- Í≤ÄÏÉâÏ∞Ω css  -->
+    <link rel="stylesheet" href="./resources/css/search-form.css">
 </head>
 
 <body>
-    <!--::≥ª∫Ò∞‘¿Ãº« πŸ::-->
-   <header class="main_menu">
+    <!--::header part start::-->
+     <header class="main_menu">
         <!--div class="sub_menu">
             <div class="container">
                 <div class="row">
@@ -63,22 +65,22 @@
                                 <ul class="navbar-nav">
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about">≥™¿« ¿Á∑·</a>
+                                        <a class="nav-link" href="about">ÎÇòÏùò Ïû¨Î£å</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="blog" id="navbarDropdown_1"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
-                                            ∑πΩ√««
+                                            Î†àÏãúÌîº
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                            <a class="dropdown-item" href="my_receipe">≥™¿« ∑πΩ√««</a>
-                                            <a class="dropdown-item" href="recommend_receipe">√ﬂ√µ ∑πΩ√««</a>
-                                            <a class="dropdown-item" href="search_receipe">∑πΩ√«« ∞Àªˆ</a>
+                                            <a class="dropdown-item" href="my_recipe">ÎÇòÏùò Î†àÏãúÌîº</a>
+                                            <a class="dropdown-item" href="recommend_recipe">Ï∂îÏ≤ú Î†àÏãúÌîº</a>
+                                            <a class="dropdown-item" href="search_recipe">Î†àÏãúÌîº Í≤ÄÏÉâ</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="shopping">ø¬∂Û¿Œ ºÓ«Œ</a>
+                                        <a class="nav-link" href="shopping">Ïò®ÎùºÏù∏ ÏáºÌïë</a>
                                     </li>
                                 </ul>
                             </div>
@@ -88,47 +90,57 @@
                 </div>
             </div>
         </div>
-    </header>
-        <!-- ≥ª∫Ò∞‘¿Ãº« πŸ ≥°-->
+     </header>
+        <!-- Header part end-->
 
-    <!-- ∆‰¿Ã¡ˆ º≥∏Ì πÆ±∏ -->
+    <!-- breadcrumb start-->
     <section class="breadcrumb breadcrumb_bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
-                            <h2>My Receipe</h2>
-                            <p>≥√¿Â∞Ìø° ∫∏∞¸µ» ≥ª ¿ΩΩƒµÈ∑Œ</p>
-                            <p>≥™∏∏¿« ∑πΩ√««∏¶ ∏∏µÈæÓ ∫∏ººø‰!</p>
+                            <h2>Search recipe</h2>
+                            <p>ÎßåÎì§Í≥† Ïã∂ÏùÄ Î†àÏãúÌîºÎ•º</p>
+                            <p>Í≤ÄÏÉâÌï¥ Î≥¥ÏÑ∏Ïöî!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--∆‰¿Ã¡ˆ º≥∏Ì πÆ±∏ ≥°-->
+    <!-- breadcrumb start-->
 
-    <!-- body -->
-    
-     <section class="top_place section_padding">
+    <!-- hotel list css start-->
+    <section class="top_place section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="section_tittle text-center">
-                        <h2>Food List</h2>
+
+
+                        <div id='search-box-container'>
+                          <button id='search-box-submit'>
+                            <i class='fa fa-search'></i>
+                          </button>
+                          <input id='search-box-input'>
+                        </div>
+                        <h3 id='search-response'></h3>
 
                     </div>
                 </div>
-            </div>                  
+            </div>
+
+
+
+
     </section>
-    
-    <!-- body ≥° -->
+    <!-- hotel list css end -->
 
 
 
     <!-- jquery plugins here-->
-    <script src="./resources/js/jquery-1.12.1.min.js"></script>
+   <script src="./resources/js/jquery-1.12.1.min.js"></script>
     <!-- poer js -->
     <script src="./resources/js/poer.min.js"></script>
     <!-- bootstrap js -->
@@ -153,3 +165,4 @@
 </body>
 
 </html>
+

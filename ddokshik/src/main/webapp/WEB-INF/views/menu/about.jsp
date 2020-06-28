@@ -72,9 +72,9 @@
                                             레시피
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                            <a class="dropdown-item" href="my_receipe">나의 레시피</a>
-                                            <a class="dropdown-item" href="recommend_receipe">추천 레시피</a>
-                                            <a class="dropdown-item" href="search_receipe">레시피 검색</a>
+                                            <a class="dropdown-item" href="my_recipe">나의 레시피</a>
+                                            <a class="dropdown-item" href="recommend_recipe">추천 레시피</a>
+                                            <a class="dropdown-item" href="search_recipe">레시피 검색</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">

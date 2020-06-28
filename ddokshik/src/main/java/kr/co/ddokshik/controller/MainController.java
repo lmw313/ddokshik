@@ -48,7 +48,7 @@ public class MainController {
 		DdokshikResult ddokshikResult = new DdokshikResult();
 		mainService.checklogin(param);
 
-		ddokshikResult.setResultMsg("�α��� ����");
+		ddokshikResult.setResultMsg("로그인성공");
 		return ddokshikResult;
 		
 		
