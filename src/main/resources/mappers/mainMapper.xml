@@ -3,7 +3,7 @@
 
 <mapper namespace="kr.co.ddokshik.mainMapper">
 
-	<insert id="getsignup" parameterType="java.util.HashMap">
+	<insert id="getsinup" parameterType="java.util.HashMap">
 	
 	insert into user (id, password, name)
 	values(#{id}, #{password}, #{name});

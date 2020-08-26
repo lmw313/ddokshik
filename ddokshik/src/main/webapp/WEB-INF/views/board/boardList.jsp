@@ -10,64 +10,65 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
 	
-	$(document).ready(function(){	
-		getBoardList();
-	});
+$(document).ready(function(){	
+	getBoardList();
+});
 
-	function getBoardList(){
-		
-		$.ajax({			
-			type:"GET",
-		    url:"/board/getBoardList",
-	        dataType:"JSON",
-	        success : function(obj) {
-				getBoardListCallback(obj);				
-	        },	  
-	        error : function(xhr, status, error) {}
-	     });
-	}
+function getBoardList(){
 	
-	function getBoardListCallback(obj){
+	$.ajax({			
+		type:"GET",
+	    url:"/board/getBoardList",
+        dataType:"JSON",
+        success : function(obj) {
+			getBoardListCallback(obj);				
+        },	  
+        error : function(xhr, status, error) {}
+     });
+}
+
+function getBoardListCallback(obj){
+	
+	
+	var list = obj;
+	var listLen = 100; 
+	
+	console.log(list);
+	console.log(listLen);
+
+	
+	var str = "";
+	
+	if(listLen >  0){
 		
-		var list = obj;
-		var listLen = obj.length;
-		
-		console.log(list);
-		console.log(listLen);
-		
-		var str = "";
-		
-		if(listLen >  0){
+		for(var a=0; a<listLen; a++){
 			
-			for(var a=0; a<listLen; a++){
-				
-				var foodcategory		= list[a].food_category; 
-				var foodname 		= list[a].food_name; 
-				var fooddetail 		= list[a].food_detail; 
-				var foodgram 		= list[a].food_gram; 
-				var foodcal 		= list[a].food_cal; 
-				
-				
-				str += "<tr>";
-				str += "<td>"+ foodcategory +"</td>";
-				str += "<td>"+ foodname +"</td>";
-				str += "<td>"+ fooddetail +"</td>";
-				str += "<td>"+ foodgram +"</td>";				
-				str += "<td>"+ foodcal +"</td>";		
-				str += "</tr>";
-				
-			} 
+			var ingredient_no	= list[a].ingredient_no; 
+			var ingredient_category = list[a].ingredient_category; 
+			var ingredient_name 		= list[a].ingredient_name; 
+			var ingredient_detail 		= list[a].ingredient_detail; 
+			var cal 		= list[a].cal; 
 			
-		} else {
 			
-			str += "<tr colspan='4'>";
-			str += "<td>등록된 글이 존재하지 않습니다.</td>";
 			str += "<tr>";
-		}
+			str += "<td>"+ ingredient_no +"</td>";
+			str += "<td>"+ ingredient_category +"</td>";
+			str += "<td>"+ ingredient_name +"</td>";
+			str += "<td>"+ ingredient_detail +"</td>";				
+			str += "<td>"+ cal +"</td>";		
+			str += "</tr>";
+			
+		} 
 		
-		$("#tbody").html(str);
+	} else {
+		
+		str += "<tr colspan='5'>";
+		str += "<td>등록된 글이 존재하지 않습니다.</td>";
+		str += "<tr>";
 	}
 	
+	$("#tbody").html(str);
+}
 </script>
 </head>
 <body>

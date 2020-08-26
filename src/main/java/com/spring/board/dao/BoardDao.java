@@ -16,10 +16,10 @@ public class BoardDao {
 	@Resource(name = "sqlSession")
 	private SqlSession sqlSession;
 
-	private static final String NAMESPACE = "com.spring.board.listMapper";
+	private static final String NAMESPACE = "com.spring.board.boardMapper";
 
-	public List<BoardDto> getMaList(BoardForm boardForm) throws Exception {
+	public List<BoardDto> getBoardList(BoardForm boardForm) throws Exception {
 
-		return sqlSession.selectList(NAMESPACE + ".getMaList");
+		return sqlSession.selectList(NAMESPACE + ".getBoardList");
 	}
 }

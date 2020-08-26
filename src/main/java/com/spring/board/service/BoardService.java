@@ -15,8 +15,8 @@ public class BoardService {
 	@Autowired
 	private BoardDao boardDao;
 
-	public List<BoardDto> getMaList(BoardForm boardForm) throws Exception {
+	public List<BoardDto> getBoardList(BoardForm boardForm) throws Exception {
 
-		return boardDao.getMaList(boardForm);
+		return boardDao.getBoardList(boardForm);
 	}
 }

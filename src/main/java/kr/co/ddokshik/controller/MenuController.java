@@ -8,21 +8,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import kr.co.ddokshik.dao.MenuDao;
 import kr.co.ddokshik.service.MenuService;
 
 @Controller
 public class MenuController {
 
-/*	@Autowired
+	@Autowired
 	private MenuService menuService;
 
-	@RequestMapping(value = "/food_list", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+	@RequestMapping(value = "/about", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
 	public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
-		return "menu/food_list";
+
+		return "menu/about";
 	}
-*/
+
 	@RequestMapping(value = "/my_recipe", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
 	public String my_recipe(HttpServletRequest request, HttpServletResponse response) throws Exception {
 

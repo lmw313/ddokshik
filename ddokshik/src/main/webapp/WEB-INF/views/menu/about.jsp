@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="./resources/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="./resources/css/style.css">
+    
+   
+	
 </head>
 
 <body>
@@ -65,6 +68,8 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="about">나의 재료</a>
                                     </li>
+                                    
+                                    
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="blog" id="navbarDropdown_1"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -101,19 +106,9 @@
                             <h2>My Materials</h2>
                             <p>나의 냉장고 재료들을</p>
                             <p>이곳에서 확인해 보세요!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- breadcrumb start-->
-
-    <!-- hotel list css start-->
-    <!-- hotel list css end -->
-
-
-
+                          
+                         
+   
     <!-- jquery plugins here-->
     <script src="./resources/js/jquery-1.12.1.min.js"></script>
     <!-- poer js -->

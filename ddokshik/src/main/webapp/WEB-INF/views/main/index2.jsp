@@ -20,7 +20,8 @@ function signup(){
         dataType:"JSON",
         data : param,
         success : function(obj) {
-			alert("성공");				
+			alert("성공");
+			
         },	  
         error : function(xhr, status, error) {alert("실패");}
      });
