@@ -24,7 +24,13 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.spring.board, kr.co.ddokshik" />
-	
+	<beans:bean name="dataSource"
+	class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<beans:property name="driverClassName"  value="com.mysql.jdbc.Driver"></beans:property>
+	<beans:property name="url" value="jdbc:mysql://ksh0623a.cafe24.com:3306/ksh0623a?characterEncoding=utf8&amp;allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC"></beans:property>
+	<beans:property name="username" value="ksh0623a"></beans:property>
+	<beans:property name="password" value="jse10090623"></beans:property>
+	</beans:bean>
 	<mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>

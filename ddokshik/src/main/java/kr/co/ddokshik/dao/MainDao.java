@@ -22,7 +22,7 @@ public class MainDao {
 	
 	public void checklogin(HashMap param) throws Exception {
 
-		sqlSession.insert(NAMESPACE + ".checklogin", param);
+		sqlSession.selectOne(NAMESPACE + ".checklogin", param);
 		
 	}
 	

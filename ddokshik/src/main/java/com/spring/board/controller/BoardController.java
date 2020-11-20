@@ -23,19 +23,19 @@ public class BoardController {
 	@Autowired
 	private BoardService boardService;
 
-	@RequestMapping( value = "/food_list")
+	@RequestMapping( value = "/about")
 	public String getMaList(HttpServletRequest request, HttpServletResponse response) throws Exception{
 		
-		return "menu/food_list";
+		return "menu/about";
 	}
 
 	@RequestMapping(value = "/getMaList")
 	@ResponseBody
 	public List<BoardDto> getMaList(HttpServletRequest request, HttpServletResponse response, BoardForm boardForm) throws Exception {
 
-		List<BoardDto> food_list = boardService.getMaList(boardForm);
-
-		return food_list;
+		List<BoardDto> about = boardService.getMaList(boardForm);
+	//	System.out.println(about);
+		return about;
 	}
 	
 	@Controller
@@ -43,7 +43,7 @@ public class BoardController {
 	public class RootController{
 		@RequestMapping(value = "/", method = {RequestMethod.GET, RequestMethod.POST})
 		public String getMain() {
-			return "food_list";
+			return "about";
 		}
 	}
 }

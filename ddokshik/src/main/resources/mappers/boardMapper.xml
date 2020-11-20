@@ -10,7 +10,3 @@
 	select * from where ingredient_no= #{no} and password= #{password};
 	</select>
 </mapper>
-
-
-
-

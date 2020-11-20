@@ -22,6 +22,4 @@ public class DdokshikResult {
 	public void setResultData(Object resultData) {
 		ResultData = resultData;
 	}
-	
-	
 }

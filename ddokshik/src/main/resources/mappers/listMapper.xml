@@ -4,18 +4,8 @@
 <mapper namespace="com.spring.board.listMapper">
 
 	<select id="getMaList" parameterType="com.spring.board.form.BoardForm" resultType="com.spring.board.dto.BoardDto">
-	
 		SELECT 
-		ingredient_no,
-		ingredient_category,
-		ingredient_name,
-		ingredient_detail,
-		cal
-		
+		*
 		FROM ingredient_list
-	
 	</select>
-	
 </mapper>
-
-

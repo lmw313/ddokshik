@@ -1,14 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
 
 <head>
-    <!-- °Çµé¸é ¾È µÊ Áö¿ì¸é ¾È µÊ ¾Æ¹«Æ° ¾È µÊ -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+div.searchbox{
+font-family: 'Noto Sans KR', sans-serif;
+
+}
+</style>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>¶È¶ÈÇÑ ½º¸¶Æ® ·¹½ÃÇÇ DDOKSHIK</title>
-    <link rel="icon" href="./resources/img/favicon.png">
+    <title>ë˜‘ë˜‘í•œ ìŠ¤ë§ˆíŠ¸ ë ˆì‹œí”¼ DDOKSHIK</title>
+  <link rel="icon" href="./resources/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -30,11 +37,14 @@
     <link rel="stylesheet" href="./resources/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="./resources/css/style.css">
+    <!-- ê²€ìƒ‰ì°½ css  -->
+
+    <link rel="stylesheet" href="./resources/css/search_recipe.css">
 </head>
 
 <body>
-    <!--::³»ºñ°ÔÀÌ¼Ç ¹Ù::-->
-   <header class="main_menu">
+    <!--::header part start::-->
+     <header class="main_menu">
         <!--div class="sub_menu">
             <div class="container">
                 <div class="row">
@@ -63,22 +73,22 @@
                                 <ul class="navbar-nav">
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="about">³ªÀÇ Àç·á</a>
+                                        <a class="nav-link" href="about">ë‚˜ì˜ ì¬ë£Œ</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="blog" id="navbarDropdown_1"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
-                                            ·¹½ÃÇÇ
+                                            ë ˆì‹œí”¼
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                            <a class="dropdown-item" href="my_recipe">³ªÀÇ ·¹½ÃÇÇ</a>
-                                            <a class="dropdown-item" href="recommend_recipe">ÃßÃµ ·¹½ÃÇÇ</a>
-                                            <a class="dropdown-item" href="search_recipe">·¹½ÃÇÇ °Ë»ö</a>
+                                            <a class="dropdown-item" href="my_recipe">ë‚˜ì˜ ë ˆì‹œí”¼</a>
+                                            <a class="dropdown-item" href="recommend_recipe">ì¶”ì²œ ë ˆì‹œí”¼</a>
+                                            <a class="dropdown-item" href="search_recipe">ë ˆì‹œí”¼ ê²€ìƒ‰</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="shopping">¿Â¶óÀÎ ¼îÇÎ</a>
+                                        <a class="nav-link" href="shopping">ì˜¨ë¼ì¸ ì‡¼í•‘</a>
                                     </li>
                                 </ul>
                             </div>
@@ -88,10 +98,10 @@
                 </div>
             </div>
         </div>
-    </header>
-        <!-- ³»ºñ°ÔÀÌ¼Ç ¹Ù ³¡-->
+     </header>
+        <!-- Header part end-->
 
-    <!-- ÆäÀÌÁö ¼³¸í ¹®±¸ -->
+    <!-- breadcrumb start-->
     <section class="breadcrumb breadcrumb_bg">
         <div class="container">
             <div class="row">
@@ -99,36 +109,76 @@
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item text-center">
                             <h2>My recipe</h2>
-                            <p>³ÃÀå°í¿¡ º¸°üµÈ ³» À½½Äµé·Î</p>
-                            <p>³ª¸¸ÀÇ ·¹½ÃÇÇ¸¦ ¸¸µé¾î º¸¼¼¿ä!</p>
+                            <p>ë‚´ê°€ ê°€ì§€ê³  ìˆëŠ” ì¬ë£Œë“¤ë¡œ</p>
+                            <p>ì•Œë§ì€ ë ˆì‹œí”¼ë¥¼ ì œê³µí•©ë‹ˆë‹¤!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--ÆäÀÌÁö ¼³¸í ¹®±¸ ³¡-->
+    <!-- breadcrumb start-->
 
-    <!-- body -->
-    
-     <section class="top_place section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="section_tittle text-center">
-                        <h2>Food List</h2>
+    <!-- hotel list css start-->
+    <section class="top_place section_padding">
+         <div class="searchbox">
+      <div class="header">
+        <h1>ë‚˜ì˜ ë ˆì‹œí”¼</h1>
+        <input onkeyup="filter()" type="text" id="value" placeholder="ê°–ê³  ìˆëŠ” ì¬ë£Œì˜ í‚¤ì›Œë“œë¥¼ ì…ë ¥í•˜ì„¸ìš”">
+      </div>
 
-                    </div>
-                </div>
-            </div>                  
+      <div class="container1">
+
+        <div class="item">
+     
+          <span class="name"><a href="https://youtu.be/pTvMsM2v1tg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;í† ë§ˆí† </a></span>
+        </div>
+        
+        <div class="item">
+         
+          <span class="name"><a href="https://youtu.be/uAShnbgCLSU">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ì–‘íŒŒ</a></span>
+        </div>
+        
+
+        <div class="item">
+      
+          <span class="name"><a href="https://youtu.be/xdYzzezEAd8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ë‹­ê³ ê¸°</a></span>
+        </div>
+
+        <div class="item">
+       
+          <span class="name"><a href="https://youtu.be/1vfJqpklDSI">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ì‚¬ê³¼</a></span>
+        </div>
+
+      </div>
+      </div>
+          
     </section>
     
-    <!-- body ³¡ -->
+    <script type="text/javascript">
+      function filter(){
+
+        var value, name, item, i;
+
+        value = document.getElementById("value").value.toUpperCase();
+        item = document.getElementsByClassName("item");
+
+        for(i=0;i<item.length;i++){
+          name = item[i].getElementsByClassName("name");
+          if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+            item[i].style.display = "flex";
+          }else{
+            item[i].style.display = "none";
+          }
+        }
+      }
+</script>
+    <!-- hotel list css end -->
 
 
 
     <!-- jquery plugins here-->
-    <script src="./resources/js/jquery-1.12.1.min.js"></script>
+   <script src="./resources/js/jquery-1.12.1.min.js"></script>
     <!-- poer js -->
     <script src="./resources/js/poer.min.js"></script>
     <!-- bootstrap js -->
@@ -150,6 +200,8 @@
     <script src="./resources/js/contact.js"></script>
     <!-- custom js -->
     <script src="./resources/js/custom.js"></script>
+    <script src="./resources/js/search-recipe.js"></script>
 </body>
 
 </html>
+

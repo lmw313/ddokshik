@@ -1,10 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="EUC-KR"
+    import = "java.sql.*" %>
+
 <!doctype html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>똑똑한 스마트 레시피 DDOKSHIK</title>
@@ -31,11 +33,23 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="./resources/css/style.css">
     
+   <style>
+      table {
+        width: 100%;
+        border-top: 1px solid #444444;
+        border-collapse: collapse;
+      }
+      th, td {
+        border-bottom: 1px solid #444444;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
    
-	
 </head>
 
 <body>
+
     <!--::header part start::-->
      <header class="main_menu">
         <!--div class="sub_menu">
@@ -106,6 +120,38 @@
                             <h2>My Materials</h2>
                             <p>나의 냉장고 재료들을</p>
                             <p>이곳에서 확인해 보세요!</p>
+                            </div>
+                           </div>
+                          </div>
+                        </div>
+                     </div>
+              </section>
+              
+              <section class="top_place section_padding">
+                 <div class="container">
+                     <div class="row justify-content-center">
+                         <div class="col-xl-6">
+                             <div class="section_tittle text-center">
+                                    <h2>My List</h2>
+                                    <p> &nbsp; </p>
+                                    <p> &nbsp; </p>
+                                     <p> &nbsp; </p>
+                                      <p> &nbsp; </p>
+                        <button type="button" class="btn btn-primary" onclick = "location='insertTestForm'">추가</button>
+                       					&nbsp;
+                        <button type="button" class="btn btn-primary" onclick = "location='updateFormTest'">수정</button>
+                        				&nbsp;
+                        <button type="button" class="btn btn-danger" onclick = "location='deleteForm'">삭제</button>
+                        
+
+                    </div>
+                </div>
+            </div>    
+            </div>              
+    </section>
+   
+     
+                            
                           
                          
    
@@ -132,6 +178,70 @@
     <script src="./resources/js/contact.js"></script>
     <!-- custom js -->
     <script src="./resources/js/custom.js"></script>
+    
+   
+</body>
+<body>
+      
+      <table width = "550" border = "1">
+      <tr>
+            <td width = "100">번호</td>
+            <td width = "100">이름</td>
+            <td width = "100">무게</td>
+            <td width = "250">유통기한</td>
+            <td width = "250">칼로리</td>
+      </tr>
+ 
+<%
+      Connection conn = null;
+      PreparedStatement pstmt = null;
+      ResultSet rs = null;
+  
+      try
+      {
+            String jdbcUrl = "jdbc:mysql://ksh0623a.cafe24.com:3306/ksh0623a?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC";
+            String dbId = "ksh0623a";
+            String dbPass = "jse10090623";
+   
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://ksh0623a.cafe24.com:3306/ksh0623a", "ksh0623a", "jse10090623" );
+            String sql = "select * from food_list";
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+             
+            while(rs.next())
+            {
+               String list_no=rs.getString(1);
+                  String list_name = rs.getString(2);
+                  String food_gram= rs.getString(3);
+                  String expdate = rs.getString(4);
+                  String cal = rs.getString(5);
+%>
+      <tr>
+            <td width = "100"><%= list_no %></td>
+            <td width = "100"><%= list_name %></td>
+            <td width = "100"><%= food_gram %></td>
+            <td width = "250"><%= expdate %></td>
+            <td width = "100"><%= cal %></td>
+      </tr>
+<%  
+            }
+      }catch(Exception e){
+            e.printStackTrace();
+      }finally{
+            if(rs != null) try { rs.close(); } catch(SQLException sqle) {}
+            if(pstmt != null) try { pstmt.close(); } catch(SQLException sqle) {}
+            if(conn != null) try { conn.close(); } catch(SQLException sqle) {}
+      }
+%>
+      </table>
 </body>
 
+<body>
+    
+</head>
+<body>
+
+
+</body>
 </html>

@@ -14,15 +14,15 @@ import kr.co.ddokshik.service.MenuService;
 @Controller
 public class MenuController {
 
-/*	@Autowired
+@Autowired
 	private MenuService menuService;
 
-	@RequestMapping(value = "/food_list", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
+	@RequestMapping(value = "/about", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
 	public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
-		return "menu/food_list";
+		return "menu/about";
 	}
-*/
+	
 	@RequestMapping(value = "/my_recipe", method = RequestMethod.GET, produces = "application/json;charset=utf-8")
 	public String my_recipe(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
@@ -45,5 +45,47 @@ public class MenuController {
 	public String shopping(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		return "menu/shopping";
+	}
+	
+	@RequestMapping(value = "/insertTest", method = RequestMethod.POST, produces = "application/json;charset=utf8")
+	public String insertTest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "menu/insertTest";
+	}
+	
+	@RequestMapping(value = "/insertTestForm", method = RequestMethod.GET, produces = "application/json;charset=utf8")
+	public String insertTestForm(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "menu/insertTestForm";
+	}
+	
+	@RequestMapping(value = "/selectTest", method = RequestMethod.GET, produces = "application/json;charset=utf8")
+	public String selectTest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "menu/selectTest";
+	}
+	
+	@RequestMapping(value = "/updateFormTest", method = RequestMethod.GET, produces = "application/json;charset=utf8")
+	public String updateFormTest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "menu/updateFormTest";
+	}
+	
+	@RequestMapping(value = "/updateTest", method = RequestMethod.POST, produces = "application/json;charset=utf8")
+	public String updateTest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "menu/updateTest";
+	}
+	
+	@RequestMapping(value = "/deleteForm", method = RequestMethod.GET, produces = "application/json;charset=utf8")
+	public String deleteForm(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "menu/deleteForm";
+	}
+	
+	@RequestMapping(value = "/delete_list", method = RequestMethod.POST, produces = "application/json;charset=utf8")
+	public String delete_list(HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+		return "menu/delete_list";
 	}
 }

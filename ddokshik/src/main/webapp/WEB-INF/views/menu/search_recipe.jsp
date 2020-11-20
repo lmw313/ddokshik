@@ -4,6 +4,46 @@
 <html lang="en">
 
 <head>
+<style>
+div#searchrecipe{
+position : absolute;
+top: 90%;
+left: 48%;
+border:1px solid;
+padding:10px;
+background-color:#FFFFFF;
+margin-left:-170px;
+margin-top: -90px;
+}
+.red_window {
+	display: inline-block;
+	width: 366px; height: 40px;
+	border: 3px solid #B40404;
+	background: white;
+}
+.input_text {
+	width: 348px; height: 21px;
+	margin: 6px 0 0 9px;
+	border: 0;
+	line-height: 21px;
+	font-weight: bold;
+	font-size: 16px;
+	outline: none;
+}
+.sch_smit {
+	width: 54px; height: 40px;
+	margin: 0; border: 0;
+	vertical-align: top;
+	background: #B40404;
+	color: white;
+	font-weight: bold;
+	border-radius: 1px;
+	cursor: pointer;
+}
+.sch_smit:hover {
+	background: #190707;
+}
+</style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,6 +72,7 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <!-- 검색창 css  -->
     <link rel="stylesheet" href="./resources/css/search-form.css">
+    <link rel="stylesheet" href="./resources/css/search_recipe.css">
 </head>
 
 <body>
@@ -110,32 +151,19 @@
         </div>
     </section>
     <!-- breadcrumb start-->
-
-    <!-- hotel list css start-->
-    <section class="top_place section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="section_tittle text-center">
-
-
-                        <div id='search-box-container'>
-                          <button id='search-box-submit'>
-                            <i class='fa fa-search'></i>
-                          </button>
-                          <input id='search-box-input'>
-                        </div>
-                        <h3 id='search-response'></h3>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-    </section>
-    <!-- hotel list css end -->
+   
+     <form method=get action="https://www.youtube.com/search" target="_blank" >
+     <div id="searchrecipe">  
+         
+     <span class='red_window'> 
+     <input type=text class='input_text' name=q size=25 maxlength=255 value="" /> 
+     </span>  
+     <!-- 구글 검색 입력 창 -->           
+     <button type=submit class="sch_smit">검색</button>
+     <!-- 검색 버튼 -->       
+   
+     </div> 
+     </form>
 
 
 
@@ -162,7 +190,12 @@
     <script src="./resources/js/contact.js"></script>
     <!-- custom js -->
     <script src="./resources/js/custom.js"></script>
+    <script src="./resources/js/search-recipe.js"></script>
+    
+
+
+    
+    
 </body>
 
 </html>
-

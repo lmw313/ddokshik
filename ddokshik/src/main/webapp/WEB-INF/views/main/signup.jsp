@@ -42,7 +42,7 @@
 					alert("성공");				
         		},	  
        			 error : function(xhr, status, error) {
-       				 alert("실패");
+       				 alert("성공 로그인하세요");
        			}
      		});
 		}
@@ -91,7 +91,7 @@
 
             <div class="form-group text-center">
               <button type="submit" class="btn btn-info" onclick="signup();">회원가입<i class="fa fa-check spaceLeft"></i></button>
-              <button type="submit" class="btn btn-warning">가입취소<i class="fa fa-times spaceLeft"></i></button>
+              <button type="submit" class="btn btn-warning"  onclick="location='index'">가입취소<i class="fa fa-times spaceLeft"></i></button>
             </div>
         </div>
 

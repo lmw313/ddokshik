@@ -44,19 +44,19 @@
 			
 			for(var a=0; a<listLen; a++){
 				
-				var ingredient_no	= list[a].ingredient_no; 
-				var ingredient_category = list[a].ingredient_category; 
-				var ingredient_name 		= list[a].ingredient_name; 
-				var ingredient_detail 		= list[a].ingredient_detail; 
-				var cal 		= list[a].cal; 
+				var user_ingredient_list	= list[a].user_ingredient_list; 
+				var user_ingredient_list_gram = list[a].user_ingredient_list_gram; 
+				var user_no 		= list[a].user_no; 
+				var ingredient_no 		= list[a].ingredient_no; 
+				var ingredient_expdate 		= list[a].ingredient_expdate; 
 				
 				
 				str += "<tr>";
-				str += "<td>"+ ingredient_no +"</td>";
-				str += "<td>"+ ingredient_category +"</td>";
-				str += "<td>"+ ingredient_name +"</td>";
-				str += "<td>"+ ingredient_detail +"</td>";				
-				str += "<td>"+ cal +"</td>";		
+				str += "<td>"+ user_ingredient_list +"</td>";
+				str += "<td>"+ user_ingredient_list_gram +"</td>";
+				str += "<td>"+ user_no +"</td>";
+				str += "<td>"+ ingredient_no +"</td>";				
+				str += "<td>"+ ingredient_expdate +"</td>";		
 				str += "</tr>";
 				
 			} 

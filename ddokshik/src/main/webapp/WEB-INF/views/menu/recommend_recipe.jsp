@@ -30,9 +30,11 @@
     <link rel="stylesheet" href="./resources/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="./resources/css/style.css">
+     
 </head>
 
 <body>
+
     <!--::header part start::-->
    <header class="main_menu">
         <!--div class="sub_menu">
@@ -112,25 +114,70 @@
     <!-- hotel list css start-->
     <section class="top_place section_padding">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
+            
                     <div class="section_tittle text-center">
                         <h2>Today's Recipe</h2>
-
-<iframe src='https://tv.naver.com/embed/14102042?autoPlay=true' 
-frameborder='no' scrolling='no' marginwidth='auto' marginheight='auto' WIDTH='800' HEIGHT='600' allow='autoplay' 
-allowfullscreen></iframe>
-
-
-
-
- 
+        
+                 
+	  <script type='text/javascript' src='http://www.youtube.com/player_api'></script>
+           <script type="text/javascript">
+           
+               var player = [
+               '<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/t4Es8mwdYlE?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0&iv_load_policy=3&enablejsapi=1" scrolling-="no" frameborder="0" id="player"></iframe></p>}',
+               '<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/dxuntkET42M?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0&iv_load_policy=3&enablejsapi=1" scrolling-="no" frameborder="0" id="player"></iframe></p>',
+               '<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/kR77WlHRZrs?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0&iv_load_policy=3&enablejsapi=1" scrolling-="no" frameborder="0" id="player"></iframe></p>',
+               '<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/0bnFoRQebq0?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0&iv_load_policy=3&enablejsapi=1" scrolling-="no" frameborder="0" id="player"></iframe></p>',
+               '<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/zS_o6psOt9g?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0&iv_load_policy=3&enablejsapi=1" scrolling-="no" frameborder="0" id="player"></iframe></p>',
+               '<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/AlK2Gl6kHZI?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0&iv_load_policy=3&enablejsapi=1" scrolling-="no" frameborder="0" id="player"></iframe></p>'
+               ];
+               function Random() {
+                   var rannum= Math.floor(Math.random()*player.length);
+                   document.getElementById('player').innerHTML=player[rannum];
+               }
+               onload = function() { Random(); }
+           </script>
+           <!--Mouse-->
+           <script language="javascript">
+               document.onmousedown=disableclick;
+               function disableclick(event)
+               {
+                   if(event.button==2)
+                   {
+                       return false;    
+                   }
+               }
+               
+           </script>
+           
+          
+          <!--Style-->
+           <style type="text/css">
+               #overlay {
+                   position: absolute;
+                   top: 0;
+                   right: 0;
+                   bottom: 0;
+                   left: 0;
+                   margin: auto;
+                   margin-top: 0px;
+                   cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjbQg61aAAAADUlEQVQYV2P4//8/IwAI/QL/+TZZdwAAAABJRU5ErkJggg=='),
+                   url(images/blank.cur),
+                   none !important;
+               }
+            
+             
+           </style>
+           
+           
                     </div>
-                </div>
-            </div>          
-            </div>        
+                </div>          
     </section>
     <!-- hotel list css end -->
+
+	
+	
+	
+	
 
 
 
@@ -157,6 +204,10 @@ allowfullscreen></iframe>
     <script src="./resources/js/contact.js"></script>
     <!-- custom js -->
     <script src="./resources/js/custom.js"></script>
+    
+       <?php include_once("analyticstracking.php") ?>
+           <div id="player"></div>
+           <div id="overlay"></div>
 </body>
 
 </html>
